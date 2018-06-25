@@ -1,0 +1,208 @@
+$body-width: 1000px;
+
+// Primary Colours
+$primary: #e05;
+$primary-light: mix($primary, white, 10%);
+$primary-dark: mix($primary, black, 20%);
+
+// Accent Colours
+$accent: #22a;
+$accent-light: mix($accent, white, 10%);
+$accent-dark: mix($accent, black, 20%);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: Lato, serif;
+  color: #444;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.canvas-wrap {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0;
+  max-width: 60%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  display: block;
+  width: 100%;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    
+  }
+  li {
+    display: block;
+    margin-left: 1rem;
+    height: 4rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      height: 4rem;
+      display: block;
+      line-height: 4rem;
+    }
+  }
+}
+
+.hero {
+  background-color: $primary;
+  background-image:
+    linear-gradient(to bottom, rgba($primary, .75), $primary), url(http://picsum.photos/g/1366/768);
+  background-size: cover;
+  min-height: 400px;
+  max-height: 800px;
+  height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: $body-width;
+  margin: 0 auto;
+}
+
+@mixin button {
+  display: inline-block;
+  background: #fff;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: .75em 1.5em;
+  border-radius: 100px;
+  font-weight: 300;
+  cursor: pointer;
+  outline: none;
+}
+
+.button {
+  @include button;
+}
+
+.hero-button {
+  @include button;
+  color: #fff;
+  background-color: $accent;
+  transition: 300ms ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba($primary-dark,.5);
+  }
+}
+
+.card-button {
+  @include button;
+  color: #fff;
+  background-color: $primary;
+  box-shadow: 0 5px 20px rgba($primary,.5);
+  transition: 300ms ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 25px rgba($primary,.5);
+  }
+}
+
+.card-button-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.card-section {
+  position: relative;
+  padding: 4rem 0;
+  margin: 2rem 0;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $accent-light;
+    transform: skewy(2deg);
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: $body-width;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.card-wrap {
+  margin: 0 auto;
+  max-width: $body-width;
+  position: relative;
+}
+
+.cards {
+  display: flex;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.card {
+  border-radius: .5rem;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba($accent-dark,.1);
+  margin: 1rem;
+  padding: 2rem;
+  width: 33%;
+  height: 200px;
+  position: relative;
+  transition: box-shadow 300ms ease;
+  &:hover {
+    box-shadow: 0 5px 30px rgba($accent-dark,.2);
+  }
+}
+
+.footer {
+  background: $accent;
+  color: #fff;
+  min-height: 200px;
+}
