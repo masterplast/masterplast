@@ -70,50 +70,50 @@
                 <div class="row">
                     <div class="mb-30 col-md-6 col-lg-4">
                           <div class="card">
-                          <img class="img-fluid cardImg" src="img/box.jpg" alt="monitoring" >
+                          <img class="img-fluid cardImg" src="/img/box.jpg" alt="monitoring" >
                           <h3 class="card-title">Кофры</h3>
                           <p class="card-text">Лёгкие и прочные короба, они идеально подходят для транспортировки еды и напитков!</p>
-                          <a class="card-link" href="#">Подробнее</a>
+<!--                          <a class="card-link" href="#">Подробнее</a>-->
                           </div>
                         </div>
                         <div class="mb-30 col-md-6 col-lg-4">
                           <div class="card">
-                          <img class="img-fluid cardImg" src="img/chair.jpg" alt="monitoring" >
+                          <img class="img-fluid cardImg" src="/img/chair.jpg" alt="monitoring" >
                           <h3 class="card-title">Кресла</h3>
                           <p class="card-text">Удобнные сидения, которые не боятся любых погодных невзгод.</p>
-                          <a class="card-link" href="#">Подробнее</a>
+<!--                          <a class="card-link" href="#">Подробнее</a>-->
                           </div>
                         </div>
                         <div class="mb-30 col-md-6 col-lg-4">
                           <div class="card">
-                          <img class="img-fluid cardImg" src="img/container.jpg" >
+                          <img class="img-fluid cardImg" src="/img/container.jpg" >
                           <h3 class="card-title">Ёмкости</h3>
                           <p class="card-text">Стеклопластиковые ёмкости, практически любых размеров и форм (при наличии чертежей). Подходят не только для перевозки воды, но и разного рода химии.</p>
-                          <a class="card-link" href="#">Подробнее</a>
+<!--                          <a class="card-link" href="#">Подробнее</a>-->
                           </div>
                         </div>
                         <div class="mb-30 col-md-6 col-lg-4">
                           <div class="card">
-                          <img class="img-fluid cardImg" src="img/crack.jpg" alt="monitoring" >
+                          <img class="img-fluid cardImg" src="/img/crack.jpg" alt="monitoring" >
                           <h3 class="card-title">Корпусные части для Freightliner Century/Columbia</h3>
                           <p class="card-text">У нас Вы можете приобрести стеклопластиковые аналоги бамперов, а так же адаптеры для фар под Lada Kalina</p>
-                          <a class="card-link" href="#">Подробнее</a>
+<!--                          <a class="card-link" href="#">Подробнее</a>-->
                           </div>
                         </div>
                         <div class="mb-30 col-md-6 col-lg-4">
                           <div class="card">
-                          <img class="img-fluid cardImg" src="img/hydro.jpg" alt="snapshots" >
+                          <img class="img-fluid cardImg" src="/img/hydro.jpg" alt="snapshots" >
                           <h3 class="card-title">Ремонт гидроциклов</h3>
                           <p class="card-text">Полировка корпуса гидроцикла, ремонт царапин, сколов, восстановление повреждённых частей.</p>
-                          <a class="card-link" href="#">Подробнее</a>
+<!--                          <a class="card-link" href="#">Подробнее</a>-->
                           </div>
                         </div>
                         <div class="mb-30 col-md-6 col-lg-4">
                           <div class="card">
-                          <img class="img-fluid cardImg" src="img/paint.jpg" alt="monitoring" >
+                          <img class="img-fluid cardImg" src="/img/paint.jpg" alt="monitoring" >
                           <h3 class="card-title">Покраска</h3>
                           <p class="card-text">Красим, просто красим.</p>
-                          <a class="card-link" href="#">Подробнее</a>
+<!--                          <a class="card-link" href="#">Подробнее</a>-->
                           </div>
                         </div>
         </div>
@@ -145,10 +145,15 @@
    <div class="container-fluid contacts" id="s4">
             <div class="container">
                 <h1>Контакты</h1>
-                <div class="center">
-                    <a class="link" href="#"><i class="fab fa-instagram fa-2x"></i></a> 
-                    <a class="link" href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <div class="row">
+                    <div class="col center">
+                        <a class="link" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="col center">
+                        <a class="link" href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
                 </div>
+                <br>
                 <p>С нами можно связаться по телефонам:</p>
                 <a class="link" href="tel:89186245770"><b>8(918) 624-57-70</b></a> - Антон<br>
                 <a class="link" href="tel:89649129553"><b>8(964) 912-95-53</b></a> - Иван
@@ -163,21 +168,23 @@
                 <h2 class="modal-title" id="myModalLabel">Заказать звонок</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
               </div>
-                <form action="php/form-processing.php" method="post" id="form">
-                  <div class="center modal-body">
-                    <p>Пожалуйста заполните поля ниже, чтобы мы могли связатсья с Вами</p>
-                    <input type="text" name="name" placeholder="Ваше имя" required="required" /><br/>
-                    <input  type="email" name="email" placeholder="Email" required="required" /><br/>
-                    <input type="phone" name="phone" placeholder="Телефон" /><br/>
-                    <textarea type="text" name="message" placeholder="Комментарий"></textarea><br/>
-                  </div>
-                  <div class="modal-footer">
-                      <input type="submit" class="btn btn-primary center">
+                <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbwyn3ZM49SIaRsbNrw-llWvVYipUIG5kVRMVu-1/exec">
+                    <div class="form-elements center">
+                        <input id="name" class="form-control center" name="name" placeholder="Ваше имя" />
+                        <input id="phone" class="form-control center" name="phone" placeholder="Ваш номер теелфона" />
+                        <input class="form-control center" id="email" name="email" type="email" value="" required placeholder="Ваша@почта.ru"/>
+                        <span class="email-invalid" style="display:none">Должен быть правильный ардрес почты!</span>
+                        <button class="btn btn-success btnForm">Отправить</button>
+                    </div>
+                    <div class="thankyou_message" style="display:none;">
+                      <h2><em>Спасибо</em> за то что написали нам!
+                        Вскоре мы Вам перезвоним!</h2>
                     </div>
                 </form>
               </div>
             </div>
           </div>
     <script  src="js/wave.js"></script>
+    <script src="js/mail.js" data-cfasync="false" type="text/javascript" language="javascript"></script>
 
 </html>
