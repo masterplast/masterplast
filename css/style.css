@@ -76,7 +76,7 @@ nav {
 
 .hero {
   background-color: #e05;
-  background-image: linear-gradient(to bottom, rgba(54, 87, 255, 0.25), #e05), url(img/bg.jpg);
+  background-image: linear-gradient(to bottom, rgba(54, 87, 255, 0.25), #e05), url(/img/bg.jpg);
   background-size: cover;
   min-height: 400px;
   max-height: 800px;
